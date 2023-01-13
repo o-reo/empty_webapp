@@ -1,11 +1,11 @@
 import React from 'react';
 import { render } from 'react-dom';
 
-data = process.env.REACT_APP_DATA
 
 class App extends React.Component {
   constructor(props) {
     super(props);
+    this.data = process.env.REACT_APP_DATA
     this.state = {
       counter: 0
     }
