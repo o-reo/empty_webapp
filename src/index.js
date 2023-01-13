@@ -1,6 +1,7 @@
 import React from 'react';
 import { render } from 'react-dom';
 
+data = process.env.REACT_APP_DATA
 
 class App extends React.Component {
   constructor(props) {
@@ -14,7 +15,7 @@ class App extends React.Component {
     return (
       <div>
         <h2>{this.state.counter}</h2>
-        <h3>{process.env.REACT_APP_DATA}</h3>
+        <h3>{data}</h3>
         <button onClick={
           () => this.setState({ counter: (this.state.counter + 1) })
         }>increase</button>
