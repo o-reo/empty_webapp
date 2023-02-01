@@ -22,7 +22,7 @@ jobs:
     - name: Import environment variables from a file
       id: import-env
       shell: bash
-      run: < ./deploy.env >> $GITHUB_ENV
+      run: < deploy.env >> $GITHUB_ENV
     - name: Build And Deploy
       id: builddeploy
       uses: Azure/static-web-apps-deploy@v1
