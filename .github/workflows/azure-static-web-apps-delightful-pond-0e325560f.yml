@@ -19,7 +19,7 @@ jobs:
     - name: Import environment variables from a file
       id: import-env
       shell: bash
-      run: < deploy.env >> $GITHUB_ENV
+      run: < ./deploy.env >> $GITHUB_ENV
     - uses: actions/checkout@v2
       with:
         submodules: true
