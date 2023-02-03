@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(process.env.REACT_APP_DATA)
+    console.log(process.env.REACT_APP_BABYLON_CONFIG)
     this.state = {
       counter: 0
     }
@@ -15,9 +15,6 @@ class App extends React.Component {
     return (
       <div>
         <h2>{this.state.counter}</h2>
-        <h3>{process.env.REACT_APP_DATA}</h3>
-        <span>{process.env.REACT_APP_ORGANIZATION_ID}</span>
-        <span>{process.env.COSMOTECH_API_SCOPE}</span>
         <button onClick={
           () => this.setState({ counter: (this.state.counter + 1) })
         }>increase</button>
