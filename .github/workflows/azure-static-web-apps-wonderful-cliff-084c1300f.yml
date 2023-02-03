@@ -19,9 +19,9 @@ jobs:
     - uses: actions/checkout@v2
       with:
         submodules: 'true'
-    - name: "Import environment variables from a file",
-      id: "import-env",
-      shell: "bash",
+    - name: "Import environment variables from a file"
+      id: "import-env"
+      shell: "bash"
       run: "cat deploy.env >> $GITHUB_ENV"
     - name: Build And Deploy
       id: builddeploy
