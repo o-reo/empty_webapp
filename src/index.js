@@ -5,7 +5,7 @@ import { render } from 'react-dom';
 class App extends React.Component {
   constructor(props) {
     super(props);
-    console.log(process.env)
+    console.log(process.env.REACT_APP_DATA)
     this.state = {
       counter: 0
     }
