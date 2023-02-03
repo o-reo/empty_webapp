@@ -1,0 +1,3 @@
+deploy: /home/oreo/Babylon/webapp/personal/config/deployments/deploy.yaml
+platform: /home/oreo/Babylon/webapp/personal/config/platforms/platform.yaml
+plugins: []
