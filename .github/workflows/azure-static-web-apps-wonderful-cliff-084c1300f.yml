@@ -22,7 +22,7 @@ jobs:
     - name: "Import environment variables from a file"
       id: "import-env"
       shell: "bash"
-      run: "cat config.json | jq '@json' >> $GITHUB_ENV.REACT_APP_BABYLON_CONFIG"
+      run: echo "REACT_APP_BABYLON_CONFIG=$(cat config.json | jq '@json')" >> $GITHUB_ENV"
     - name: Build And Deploy
       id: builddeploy
       uses: Azure/static-web-apps-deploy@v1
